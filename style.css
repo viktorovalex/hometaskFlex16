@@ -1,0 +1,282 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  height: 70px;
+  background-color: #373c3f;
+  position: reletive;
+}
+nav p {
+  color: #fff;
+  font-size: 1.3rem;
+  display: none;
+}
+nav a.menu-adaptive {
+  position: absolute;
+  height: 70px;
+  right: 10px;
+  top: 0;
+  width: 60px;
+  background-color: #000;
+  font-size: 36px;
+  cursor: pointer;
+  display: none;
+}
+nav a.menu-adaptive i {
+  position: absolute;
+  left: 23%;
+  top: 19%;
+  color: #fff;
+}
+nav ul {
+  margin-left: 5%;
+  height: 100%;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  margin-left: 2%;
+  float: left;
+}
+nav ul li a {
+  text-decoration: none;
+  line-height: 70px;
+  color: #fff;
+}
+
+header {
+  background-color: #0996A5;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+header h1 {
+  color: #fff;
+  margin-left: 10%;
+  font-size: 2rem;
+}
+header h3 {
+  font-size: 1.5rem;
+  margin-left: 10%;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: inline-block;
+  opacity: 0.5;
+}
+header a {
+  display: inline-block;
+  color: #fff;
+  margin-left: 20%;
+  font-size: 1.5rem;
+}
+
+.preloader {
+  height: 150px;
+  display: flex;
+}
+.preloader .text-some {
+  padding-top: 70px;
+  background-color: #373c3f;
+  flex-grow: 6;
+}
+.preloader .text-some h3 {
+  margin-left: 10%;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: .7;
+}
+.preloader .prev-next {
+  background-color: #bc3183;
+  flex-grow: 1;
+  padding-top: 50px;
+}
+.preloader .prev-next a {
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  margin-left: 30%;
+}
+
+.slides {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.slides .first-block {
+  width: 33.33%;
+  background-color: #5b0fa1;
+}
+.slides .first-block a {
+  color: #fff;
+  display: block;
+  margin-top: 30%;
+  margin-bottom: 30%;
+  margin-left: 40%;
+  font-size: 0.7rem;
+}
+.slides .second-block {
+  width: 33.33%;
+  background-image: url("img/bridje2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.slides .third-block {
+  width: 33.34%;
+  background-image: url("img/face3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.desc {
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+}
+.desc .link {
+  padding-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.desc .link a {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #0996A5;
+  margin-left: 10%;
+}
+.desc .first-desc {
+  width: 50%;
+}
+.desc .first-desc p {
+  padding-left: 10%;
+  margin-top: 10px;
+}
+.desc .second-desc {
+  width: 50%;
+}
+.desc .second-desc p {
+  padding-left: 10%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 680px) {
+  nav a.menu-adaptive {
+    display: block;
+  }
+  nav p {
+    display: block;
+    padding-top: 20px;
+  }
+  nav ul {
+    display: none;
+    margin-left: -15px;
+    margin-top: 30px;
+  }
+  nav ul li {
+    background-color: #373c3f;
+    width: 120%;
+    display: block;
+    padding-left: 30%;
+    float: none;
+    display: block;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    z-index: 888;
+  }
+  nav ul li:hover {
+    background-color: #ebebeb;
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #0996A5;
+    transition: all .5s;
+  }
+
+  header {
+    position: reletive;
+  }
+
+  .preloader .text-some h3 {
+    font-size: 1rem;
+    margin-left: 3%;
+  }
+  .preloader .prev-next a {
+    font-size: 1rem;
+  }
+
+  .slides .first-block {
+    width: 100%;
+    height: 400px;
+  }
+  .slides .second-block {
+    width: 100%;
+    height: 400px;
+  }
+  .slides .third-block {
+    width: 100%;
+    height: 400px;
+  }
+
+  .desc .first-desc {
+    width: 100%;
+  }
+  .desc .first-desc p {
+    width: 70%;
+  }
+  .desc .second-desc {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .desc .second-desc p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 390px) {
+  header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  header h1 {
+    font-size: 1rem;
+  }
+  header h3 {
+    font-size: 0.8rem;
+  }
+  header a {
+    font-size: 1rem;
+  }
+
+  .preloader {
+    height: 120px;
+  }
+  .preloader .text-some {
+    padding-top: 60px;
+    flex-grow: 5;
+  }
+  .preloader .text-some h3 {
+    font-size: 0.8rem;
+    margin-left: 2%;
+  }
+  .preloader .prev-next {
+    flex-grow: 2;
+  }
+  .preloader .prev-next a {
+    font-size: 0.9rem;
+  }
+
+  .slides .first-block {
+    height: 250px;
+  }
+  .slides .second-block {
+    height: 250px;
+  }
+  .slides .third-block {
+    height: 250px;
+  }
+
+  .desc p {
+    margin-top: 0;
+    widows: 50%;
+  }
+}
